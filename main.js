@@ -8,8 +8,16 @@ const hand = document.querySelector(".hand");
 let handSecondCount = 0;
 
 function secondHand() {
-    handSecondCount = handSecondCount + 6;
+    handSecondCount = sec ;
     hand.style.transform = 'rotate(' + handSecondCount + 'deg)';
 };
 
 setInterval(secondHand, 1000);
+  
+
+var d = new Date();
+var sec = d.getSeconds();
+var min =  d.getMinutes();
+//var n = d.getMilliseconds()
+
+console.log(d)
